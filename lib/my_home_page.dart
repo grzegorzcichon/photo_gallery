@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:photo_gallery/CommentsPage.dart';
+import 'package:photo_gallery/comments_page.dart';
 import 'package:photo_gallery/photo.dart';
 import 'package:photo_gallery/photo_list.dart';
 
@@ -25,7 +25,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Builder(builder: (context) {
         if (currentindex == 1) {
-          return Apka();
+          return const Apka();
         }
         return FutureBuilder<List<Photo>>(
           future: fetchPhotos(http.Client()),
