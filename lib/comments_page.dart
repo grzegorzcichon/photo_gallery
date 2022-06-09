@@ -43,16 +43,16 @@ class Album {
   String get title => title;
 }
 
-void main() => runApp(const Apka());
+void main() => runApp(const Coment());
 
-class Apka extends StatefulWidget {
-  const Apka({super.key});
+class Coment extends StatefulWidget {
+  const Coment({super.key});
 
   @override
-  _ApkaState createState() => _ApkaState();
+  _ComentState createState() => _ComentState();
 }
 
-class _ApkaState extends State<Apka> {
+class _ComentState extends State<Coment> {
   late Future<Album> futureAlbum;
 
   @override

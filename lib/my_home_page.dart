@@ -19,13 +19,13 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue[100],
+      backgroundColor: Colors.blue[800],
       appBar: AppBar(
         title: Text(widget.title),
       ),
       body: Builder(builder: (context) {
         if (currentindex == 1) {
-          return const Apka();
+          return const Coment();
         }
         return FutureBuilder<List<Photo>>(
           future: fetchPhotos(http.Client()),
